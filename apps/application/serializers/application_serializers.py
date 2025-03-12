@@ -267,7 +267,7 @@ class ApplicationSerializer(serializers.Serializer):
             file.close()
             application_access_token = QuerySet(ApplicationAccessToken).filter(
                 access_token=self.data.get('token')).first()
-            is_draggable = 'false'
+            is_draggable = 'true'
             show_guide = 'true'
             float_icon = f"{self.data.get('protocol')}://{self.data.get('host')}/ui/MaxKB.gif"
             xpack_cache = DBModelManage.get_model('xpack_cache')
