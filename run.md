@@ -1,6 +1,14 @@
 ## dcoker 数据库安装
 docker run --name my-postgres -e POSTGRES_USER=root -e POSTGRES_PASSWORD=shuyixiao -e POSTGRES_DB=maxkb -p 5432:5432 -d postgres-with-vector
+
+## vscode插件安装
+![alt text](image-1.png)
 ## 后台服务启动命令 部分依赖需要换源或者翻墙下载 
+<!-- 可以换源 -->
+poetry source add --priority=primary mirrors  https://mirrors.aliyun.com/pypi/simple/
+<!-- 创建虚拟环境 -->
+python -m venv .venv
+
 poetry install
 python main.py dev celery
 python main.py dev web
