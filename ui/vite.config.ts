@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => {
     server: {
       cors: true,
       host: '0.0.0.0',
-      port: Number(ENV.VITE_APP_PORT),
+      port: Number(3003),
       strictPort: true,
       proxy: proxyConf
     },
