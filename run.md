@@ -8,5 +8,5 @@ python main.py dev local_model
 ## 注意事项
 1、如果本地不包含向量模型，会导致量化失败，这时候需要挂梯子
 2、建议使用vscode运行
-3、本地python版本为 2.7.3
-4、node版本需要20以上
+3、本地python版本为  3.11.9
+4、node版本需要18以上
